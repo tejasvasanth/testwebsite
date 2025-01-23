@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changing Square</title>
+    <style>
+        /* Create the square and apply basic styling */
+        .square {
+            width: 200px;
+            height: 200px;
+            background-color: red; /* Initial color */
+            animation: colorChange 4s infinite; /* 4s duration, infinite looping */
+        }
+
+        /* Define the keyframes for the color change animation */
+        @keyframes colorChange {
+            0% {
+                background-color: red; /* Start with red */
+            }
+            25% {
+                background-color: pink; /* Change to pink */
+            }
+            50% {
+                background-color: green; /* Change to green */
+            }
+            75% {
+                background-color: yellow; /* Change to yellow */
+            }
+            100% {
+                background-color: black; /* End with black */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Square element -->
+    <div class="square"></div>
+
+</body>
+</html>
